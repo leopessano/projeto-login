@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="imagem">
-                Foto
-            </div>
+            <div id="imagem"></div>
+
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo (a) novamente! Faça login para acessar sua conta e continuar com seus trabalhos.</p>
+
                 <form action="login.php" method="post">
-                    
+                    <p id="email" >
+                        <span id="iperson" class="material-icons">person
+                        <label for="iemail"></label>
+                        <input type="email" name="email" id="iemail" 
+                        placeholder="Seu e-mail" autocomplete="email" size="23">
+                    </p>
+                    <p id="senha">
+                        <span id="ikey" class="material-icons">key
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20" size="23">
+                    </p>
+                    <p id="entrar">
+                        <input type="submit" value="Entrar" id="ientrar">
+                    </p>
+                    <p id="esqueci">
+                        <input type="button" value="Esqueci minha senha" id="iesqueci">
+                    </p>
                 </form>
             </div>
         </section>
